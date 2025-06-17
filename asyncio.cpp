@@ -96,7 +96,7 @@ int main() {
         std::future<std::string> futureResponse = std::async(std::launch::async, callOpenAICompletionAPI, prompt);
 
         // In a more complex application, other tasks can be performed here while waiting.
-        // For demonstration, we simply wait for the result.
+        
         std::string response = futureResponse.get();
 
         // Parse and pretty-print the JSON response.
